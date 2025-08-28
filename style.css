@@ -1,0 +1,109 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: darkgreen;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Navigation using Flexbox */
+.navbar {
+  background: crimson;
+}
+.nav-links {
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: center;
+  list-style: none;
+}
+.nav-links li {
+  margin: 0 1rem;
+}
+.nav-links a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/* Grid Layout for Main Content */
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* Content + Sidebar */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Content Section */
+.content {
+  background: darkorange;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Cards using Flexbox */
+.cards {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.card {
+  flex: 1; /* Equal width */
+  background: darkgray;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  background: dimgrey;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: yellow;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* Tablet (2 columns stack differently) */
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 2fr 1fr; /* Narrower sidebar */
+  }
+  .cards {
+    flex-direction: column; /* Stack cards vertically */
+  }
+}
+
+/* Mobile (stack layout) */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column; /* Stack nav links */
+    align-items: center;
+  }
+  .grid-container {
+    grid-template-columns: 1fr; /* One column layout */
+  }
+  .sidebar {
+    margin-top: 1rem;
+  }
+}
