@@ -1,0 +1,24 @@
+1. Normal Document Flow
+a. block element <p></p>
+b. inline element <span></span>
+
+2. Display property
+a. block 
+b. inline 
+c. block-inline 
+d. none 
+e. flex
+f. grid
+
+3. CSS Box Model
+a. margin
+b. border
+c. padding
+d. content
+
+css Positioning
+a. static 
+b. relative 
+c. absolute
+d. fixed
+e. sticky

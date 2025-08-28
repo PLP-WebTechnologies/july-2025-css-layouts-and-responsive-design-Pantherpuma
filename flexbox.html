@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style>
+            .container {
+                display: flex;
+                /* justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: gold; */
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 10px;
+            }
+            .box {
+                flex: auto;
+                background-color: darkcyan;
+                /* color: white; */
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">Item 1</div>
+            <div class="box">Item 2</div>
+            <div class="box">Item 3</div>
+            <!-- <div class="box">
+                <h1>Flexbox Layout</h1>
+                <p>This is a sample example of Flexbox Layout</p>
+            </div> -->
+        </div>
+    </body>
+</html>
